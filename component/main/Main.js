@@ -1,5 +1,6 @@
 var React = require('react');
-var ConceptsList = require('./ConceptsList');
+var ConceptsList = require('./components/ConceptsList');
+var Footer = require('./components/Footer');
 
 var Main = React.createClass({
     displayName: 'Main',
@@ -8,6 +9,7 @@ var Main = React.createClass({
             <div>
                 <h1>Learndot Desktop</h1>
                 <ConceptsList />
+                <Footer />
             </div>
         );
     }

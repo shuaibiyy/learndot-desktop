@@ -1,0 +1,25 @@
+.sticky-footer {
+    height: 142px;
+    position: relative;
+    line-height: 142px;
+}
+
+.sticky-footer .columns {
+    height: 142px;
+    position: relative;
+}
+
+.sticky-footer .spacer-icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -30px;
+    margin-left: -30px;
+    display: block;
+    width: 60px;
+    height: 60px;
+    opacity: 0.2;
+    background-image: url("https://d2tn1ox6k5bdq9.cloudfront.net/crazyhorse/img/ld-300.png");
+    background-size: cover;
+}
+
