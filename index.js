@@ -16,7 +16,7 @@ app.on('window-all-closed', function() {
 app.on('ready', function() {
   mainWindow = new BrowserWindow({
     width: 800,
-    height: 600,
+    height: 786,
     'min-width': 480,
     'min-height': 280,
     frame: true
@@ -67,7 +67,7 @@ app.on('ready', function() {
         click: function() {
           app.quit();
         }
-      }, ]
+      } ]
     }, {
       label: 'Edit',
       submenu: [{

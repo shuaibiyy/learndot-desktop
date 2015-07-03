@@ -4,7 +4,7 @@ var Concept = require('./Concept');
 var $ = require('jquery');
 
 var ConceptRequestStore = require('../stores/ConceptRequestStore');
-var ldConceptsEndpoint = 'http://ponyboy.dev:8000/api/publicConcept?id=7';
+var ldConceptsEndpoint = 'http://ponyboy.dev:8000/api/publicConcept';
 
 var ConceptsList = React.createClass({
 
@@ -21,7 +21,7 @@ var ConceptsList = React.createClass({
       if (this.isMounted()) {
         console.log(ldConcept);
         this.setState({
-          concepts: [ldConcept]
+          concepts: ldConcept
         });
       }
     }.bind(this));
@@ -31,7 +31,7 @@ var ConceptsList = React.createClass({
     return (
       <div className="list-group">
               { this.state.concepts.map(function (c) {
-                return <Concept name={c.name} description={c.description} />;
+                return <Concept name={c.name} description={c.description} id={c.id} />;
               })}
       </div>
     );
