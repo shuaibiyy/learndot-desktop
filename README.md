@@ -1,5 +1,7 @@
 # Learndot Desktop App
 
+Built using [Electron](https://github.com/atom/electron).
+
 # How to develop
 1. `npm i`
 2. `npm start`
